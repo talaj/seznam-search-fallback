@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "Seznam search fallback",
+  "version": "1.0",
+
+  "description": "Adds fallback links to other search engines.",
+
+  "content_scripts": [
+    {
+      "matches": ["https://search.seznam.cz/*"],
+      "js": ["fallback.js"]
+    }
+  ]
+}
